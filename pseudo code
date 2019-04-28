@@ -1,0 +1,13 @@
+1)first of all we will import speech_recognition as sr.
+2)Notice that we have speech_recognition in such  format  whereas earlier we have installed it in this way SpeechRecognition , so you need to have a look around the cases because this is case sensitive.
+3)Now we have used as notation  because writing speech_recognition whole every time is not a good way.
+4)Now we have to initialize r = sr.Recognizer() ,this will work as a recognizer to recognize our voice.
+5)So, with sr.Microphone() as source: which means that we are initialising our source to sr.Microphone ,we can also use some audio files to convert into text but in this tutorial i am using Microphone voice.
+6)Next we will print a simple statement that recommend the user to speak anything.
+7)Now we have to use r.listen(source) command and we have to listen the source.So, it will listen to the source and store it in the audio.
+8)It may happen some time the audio is not clear and you might not get it correctly ,so we can put it inside the try and except block .
+9)So inside the try block, our text will be text = r.recognize_google(audio) ,now we have various options like recognize_bing(),recognize_google_cloud(),recognize_ibm(), etc.But for this one i am using recognize_google().And lastly we have to pass our audio.
+10)And this will convert our audio into text.
+11)Now we just have to print print(“You said : {}”.format(text)) ,this will print whatever you have said.
+12)In the except block we can just write  print(“Sorry could not recognize your voice”) ,this will message you if your voice is not recorded clearly.
+© 2019 GitHub, Inc.
