@@ -1,0 +1,14 @@
+import speech_recognition as sr
+
+r = sr.recognizer()
+
+with sr.microphone() as source:
+    print('speak anything :')
+    audio = r.listen(source)
+
+    try:
+         text = r.recognizer_google(audio)
+        print('you said : {}'.formate(text))
+    
+    except:
+        print('sorry could not recognize your voice')
