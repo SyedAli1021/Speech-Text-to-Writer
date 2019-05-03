@@ -1,0 +1,16 @@
+Fllow these guidelines:
+
+Make elements such as buttons and other common elements perform predictably (including responses such as pinch = zoom) so users can unconsciously use them everywhere. Form should follow function.
+Maintain high discoverability. Clearly label icons and include well-indicated affordances.
+Keep interfaces simple and create an “invisible” feel. Every element must serve a purpose.
+Respect the user’s eye and attention regarding layout; focus on hierarchy and readability:
+Alignment – minimize your number of alignment lines (think justified text); typically choose edge (over center) alignment.
+Draw attention to key features using:
+Color, brightness and contrast. Avoid including colors or buttons excessively.
+Text via font sizes, bold type/weighting, italics, capitals and distance between letters. Users should pick up meanings just by scanning.
+Minimize the number of actions for performing tasks but focus on one chief function per page; guide users by indicating preferred actions. Ease complex tasks by using progressive disclosure.
+Put controls near objects users want to control.
+Keep users informed vis-à-vis system responses/actions with feedback.
+Consider defaults to reduce user burdens (e.g., pre-fill forms).
+Use reusable design patterns to guide behavior regarding navigation and search functions.
+Concentrate on maintaining brand consistency.
