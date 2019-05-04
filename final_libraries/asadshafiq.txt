@@ -1,0 +1,17 @@
+def audio_interfaces():
+        """
+        Extracts audio interfaces data
+
+        :return list[AudioInterface]: Audio interfaces data
+        """
+        p = pyaudio.PyAudio()
+
+        interfaces = []
+        for i in range(p.get_device_count()):
+            data = p.get_device_info_by_index(i)
+            if 'hw' not in data['name']:
+                interfaces.append(AudioInterface(data))
+
+        p.terminate()
+
+        return interfaces 

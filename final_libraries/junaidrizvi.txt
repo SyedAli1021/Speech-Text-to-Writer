@@ -1,0 +1,17 @@
+def start(self):
+        try:
+            p = pyaudio.PyAudio()
+
+            self.decoder = Decoder(CHUNK_SIZE*20)
+
+            self.stream = p.open(format=p.get_format_from_width(2),
+                                 channels=2,
+                                 rate=44100,
+                                 output=True)
+
+            yield self.stream
+        finally:
+            self.stream.stop_stream()
+            self.stream.close()
+
+            p.terminate() 
